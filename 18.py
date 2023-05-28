@@ -9,4 +9,11 @@
 # 6
 # -> 5
 
+n = int(input('Введите кол-во элементов: '))
+list_1 = []
+for _ in range(n):
+    list_1.append(int(input('Введите значение: ')))
+print(list_1)
+
+x = (int(input('Введите значение X: ')))
 
