@@ -9,4 +9,16 @@
 # 3
 # -> 1
 
+n = int(input('Введите кол-во элементов: '))
+list_1 = []
+for _ in range(n):
+    list_1.append(int(input('Введите значение: ')))
+print(list_1)
 
+x = (int(input('Введите значение X: ')))
+
+count = 0
+for ind in range(n):
+    if list_1[ind] == x:
+        count += 1
+print(count)
