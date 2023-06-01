@@ -9,11 +9,15 @@
 # 6
 # -> 5
 
-n = int(input('Введите кол-во элементов: '))
-list_1 = []
-for _ in range(n):
-    list_1.append(int(input('Введите значение: ')))
-print(list_1)
+count = int(input('Кол-во: '))
+some_list = []
+for _ in range(count):
+    number = int(input())
+    some_list.append(number)
 
-x = (int(input('Введите значение X: ')))
-
+x = int(input('Заданное число: '))
+find_number = some_list[0]
+for number in some_list:
+    if abs(x - number) < abs(x - find_number):
+        find_number = number
+print(find_number)
